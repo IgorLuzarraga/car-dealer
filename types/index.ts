@@ -1,6 +1,10 @@
 import { MouseEventHandler } from 'react'
 import { Option } from 'fp-ts/lib/Option';
 
+export enum AppSections {
+    CarCatalogue = "CarCatalogue",
+}
+
 export type CustomBtnProps = {
     isDisabled?: boolean;
     btnType?: "button" | "submit";
