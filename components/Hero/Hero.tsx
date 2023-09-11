@@ -31,7 +31,7 @@ const Hero = () => {
                     handleClick={handleScroll}
                 />
             </div>
-            <div className="xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen">
+            <div className="xl:flex-[1.5] flex justify-start items-start w-full xl:h-screen">
                 <HeroImage />
             </div>
         </div>
