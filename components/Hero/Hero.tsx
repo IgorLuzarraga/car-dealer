@@ -2,7 +2,7 @@
 
 import { CustomBtn } from '@/components'
 import HeroImage from './HeroImage';
-
+import { some, none } from 'fp-ts/lib/Option';
 
 const Hero = () => {
     const handleScroll = () => {
@@ -27,7 +27,8 @@ const Hero = () => {
 
                 <CustomBtn
                     title="Explore Cars"
-                    containerStyles="bg-primary-blue text-white rounded-full mt-10"
+                    containerStyles={some("bg-primary-blue text-white rounded-full mt-10")}
+                    rightIcon={none}
                     handleClick={handleScroll}
                 />
             </div>
