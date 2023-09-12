@@ -5,6 +5,18 @@ export enum AppSections {
     CarCatalogue = "CarCatalogue",
 }
 
+export type HomeProps = {
+    searchParams: FilterProps;
+}
+
+export type FilterProps = {
+    manufacturer?: string;
+    year?: number;
+    model?: string;
+    limit?: number;
+    fuel?: string;
+}
+
 export type CustomBtnProps = {
     isDisabled?: boolean;
     btnType?: "button" | "submit";
@@ -30,4 +42,35 @@ export type CustomFilterProps = {
 export type SearchManuFacturerProps = {
     manufacturer: string;
     setManuFacturer: (manufacturer: string) => void;
+}
+export type CarsType = CarProps[]
+
+export type CarProps = {
+    city_mpg: number;
+    class: string;
+    combination_mpg: number;
+    cylinders: number;
+    displacement: number;
+    drive: string;
+    fuel_type: string;
+    highway_mpg: number;
+    make: string;
+    model: string;
+    transmission: string;
+    year: number;
+}
+
+export type CarCardProps = {
+    model: string;
+    make: string;
+    mpg: number;
+    transmission: string;
+    year: number;
+    drive: string;
+    cityMPG: number;
+}
+
+export type ShowMoreProps = {
+    pageNumber: number;
+    isNext: boolean;
 }

@@ -1,6 +1,6 @@
 import Hero from './hero/Hero'
-import CustomBtn from './CustomBtn'
-import CustomFilter from './CustomFilter'
+import CustomBtn from './custom/CustomBtn'
+import CustomFilter from './custom/CustomFilter'
 
 export {
     Hero,
