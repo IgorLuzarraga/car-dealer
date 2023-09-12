@@ -22,7 +22,8 @@ export type CustomBtnProps = {
     btnType?: "button" | "submit";
     // containerStyles?: string;
     containerStyles: Option<string>;
-    textStyles?: string;
+    // textStyles?: string;
+    textStyles: Option<string>;
     title: string;
     // rightIcon?: string;
     rightIcon: Option<string>;

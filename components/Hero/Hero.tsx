@@ -28,6 +28,7 @@ const Hero = () => {
                 <CustomBtn
                     title="Explore Cars"
                     containerStyles={some("bg-primary-blue text-white rounded-full mt-10")}
+                    textStyles={none}
                     rightIcon={none}
                     handleClick={handleScroll}
                 />
