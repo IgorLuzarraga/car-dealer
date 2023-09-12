@@ -16,3 +16,18 @@ export type CustomBtnProps = {
     rightIcon: Option<string>;
     handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
+
+export type OptionProps = {
+    title: string;
+    value: string;
+}
+
+export type CustomFilterProps = {
+    title: string;
+    options: OptionProps[];
+}
+
+export type SearchManuFacturerProps = {
+    manufacturer: string;
+    setManuFacturer: (manufacturer: string) => void;
+}
