@@ -71,6 +71,12 @@ export type CarCardProps = {
     cityMPG: number;
 }
 
+export type CarDetailsProps = {
+    isOpen: boolean;
+    closeModal: () => void;
+    car: CarProps;
+}
+
 export type ShowMoreProps = {
     pageNumber: number;
     isNext: boolean;

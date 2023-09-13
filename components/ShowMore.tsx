@@ -21,7 +21,8 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
   };
 
   return (
-    <div className="w-full flex-center gap-5 mt-10">
+    <div className="w-full flex-center mt-10">
+
       {!isNext && (
         <CustomBtn
           btnType="button"
@@ -31,6 +32,7 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
           rightIcon={none}
           handleClick={handleNavigation}
         />
+
       )}
     </div>
   );

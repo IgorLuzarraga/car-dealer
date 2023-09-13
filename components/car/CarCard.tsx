@@ -62,7 +62,7 @@ const CarCard = ({ car }: CarCardProps) => {
 
         <div className="hidden group-hover:flex absolute bottom-0 w-full z-10">
           <CustomBtn
-            title='View More'
+            title='Car Details'
             containerStyles={some('w-full py-[16px] rounded-full bg-primary-blue')}
             textStyles={some('text-white text-[14px] leading-[17px] font-bold')}
             rightIcon={some('/right-arrow.svg')}
