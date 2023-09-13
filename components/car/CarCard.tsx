@@ -6,7 +6,7 @@ import Image from "next/image";
 import { generateCarImageUrl, calculateCarRent } from "@/utils";
 import { CarProps } from "@/types";
 import { CustomBtn } from "../";
-import CarDetails from "./CarDetails";
+import CarDetails from "./carDetails/CarDetails";
 import { some } from 'fp-ts/lib/Option';
 
 interface CarCardProps {
