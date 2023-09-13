@@ -77,6 +77,10 @@ export type CarDetailsProps = {
     car: CarProps;
 }
 
+export type CloseModalBtnProps = {
+    closeModal: () => void;
+}
+
 export type ShowMoreProps = {
     pageNumber: number;
     isNext: boolean;
