@@ -5,7 +5,7 @@ import { CustomFilter } from '@/components'
 import { fuels, yearsOfProduction } from '@/constants'
 import { HomeProps } from '@/types'
 import { fetchCars } from '@/services'
-import CarCard from '@/components/car/CarCard'
+import CarCard from '@/components/car/carCard/CarCard'
 import ShowMore from '@/components/ShowMore'
 import { CarsType } from '@/types'
 

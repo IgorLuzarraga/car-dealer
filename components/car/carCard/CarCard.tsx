@@ -5,9 +5,10 @@ import Image from "next/image";
 
 import { generateCarImageUrl, calculateCarRent } from "@/utils";
 import { CarProps } from "@/types";
-import { CustomBtn } from "../";
-import CarDetails from "./carDetails/CarDetails";
+import { CustomBtn } from "../..";
+import CarDetails from "../carDetails/CarDetails";
 import { some } from 'fp-ts/lib/Option';
+import CarFeatures from "./CarFeatures";
 
 interface CarCardProps {
   car: CarProps;
@@ -22,6 +23,7 @@ const CarCard = ({ car }: CarCardProps) => {
 
   return (
     <div className="flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl group">
+
       <div className="w-full flex justify-between items-start gap-2">
         <h2 className="text-[22px] leading-[26px] font-bold capitalize">
           {make} {model}
@@ -39,9 +41,10 @@ const CarCard = ({ car }: CarCardProps) => {
       </div>
 
       <div className='relative flex w-full mt-2'>
-        <div className='flex group-hover:invisible w-full justify-between text-grey'>
 
-          <div className='flex flex-col justify-center items-center gap-2'>
+        <div className='group-hover:invisible w-full'>
+
+          {/* <div className='flex flex-col justify-center items-center gap-2'>
             <Image src='/steering-wheel.svg' width={20} height={20} alt='steering wheel' />
             <p className='text-[14px] leading-[17px]'>
               {transmission === "a" ? "Automatic" : "Manual"}
@@ -56,7 +59,8 @@ const CarCard = ({ car }: CarCardProps) => {
           <div className="flex flex-col justify-center items-center gap-2">
             <Image src="/gas.svg" width={20} height={20} alt="gas pump" />
             <p className="text-[14px] leading-[17px]">{city_mpg} MPG</p>
-          </div>
+          </div> */}
+          <CarFeatures car={car} />
 
         </div>
 
@@ -69,6 +73,7 @@ const CarCard = ({ car }: CarCardProps) => {
             handleClick={() => setIsOpen(true)}
           />
         </div>
+
       </div>
 
       <CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car} />
