@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 
 import { ShowMoreProps } from "@/types";
 import { updateSearchParams } from "@/utils";
-// import { CustomBtn } from "./";
 import CustomBtn from "./custom/CustomBtn";
 import { some, none } from 'fp-ts/lib/Option';
 
@@ -12,6 +11,7 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
   const router = useRouter();
 
   const handleNavigation = () => {
+
     // Calculate the new limit based on the page number and navigation type
     const newLimit = (pageNumber + 1) * 10;
 

@@ -1,6 +1,5 @@
 import { some, none } from 'fp-ts/lib/Option';
 import CustomBtn from '../custom/CustomBtn';
-// import { CustomBtn } from "..";
 import CarLogo from "../CarLogo";
 
 const NavBar = () => (

@@ -18,7 +18,8 @@ Tailwind CSS: Crafting elegant styles effortlessly.
 
 🎯 The Project: CarDealer is a captivating landing page that the user can browse a diverse catalog of vehicles. Filter cars by year, fuel type (gas, electric, or fuel), and brand to find the perfect vehicle for his/her needs.
 
-🔗 Experience ECarDealer: Vercel: 
+🔗 Experience CarDealer: 
+Vercel: https://car-dealer-delta.vercel.app/
 
 📚 Special Thanks: This project came to life through guidance from JavaScript Mastery's tutorial: 
 https://www.youtube.com/watch?v=pUNSHPyVryU
