@@ -3,10 +3,11 @@
 import { CustomBtn } from '@/components'
 import HeroImage from './HeroImage';
 import { some, none } from 'fp-ts/lib/Option';
+import { AppSections } from '@/types';
 
 const Hero = () => {
     const handleScroll = () => {
-        const nextSection = document.getElementById("discover");
+        const nextSection = document.getElementById(AppSections.CarCatalogue);
 
         if (nextSection) {
             nextSection.scrollIntoView({ behavior: "smooth" });
