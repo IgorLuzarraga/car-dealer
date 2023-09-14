@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { CarProps } from "@/types";
-import { CustomBtn } from "../..";
+// import { CustomBtn } from "../..";
+import CustomBtn from "@/components/custom/CustomBtn";
 import CarDetails from "../carDetails/CarDetails";
 import { some } from 'fp-ts/lib/Option';
 import CarFeatures from "./CarFeatures";

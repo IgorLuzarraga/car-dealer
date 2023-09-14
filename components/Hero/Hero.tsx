@@ -1,6 +1,7 @@
 "use client";
 
-import { CustomBtn } from '@/components'
+//import { CustomBtn } from '@/components'
+import CustomBtn from '../custom/CustomBtn';
 import HeroImage from './HeroImage';
 import { some, none } from 'fp-ts/lib/Option';
 import { AppSections } from '@/types';
