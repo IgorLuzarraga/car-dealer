@@ -4,7 +4,7 @@
 import CustomBtn from '../custom/CustomBtn';
 import HeroImage from './HeroImage';
 import { some, none } from 'fp-ts/lib/Option';
-import { AppSections } from '@/types';
+import { AppSections } from '../../types';
 
 const Hero = () => {
     const handleScroll = () => {
