@@ -1,10 +1,10 @@
 "use client";
 
 //import { CustomBtn } from '@/components'
-import CustomBtn from '../custom/CustomBtn';
-import HeroImage from './HeroImage';
+import CustomBtn from './custom/CustomBtn';
+import HeroImage from './hero/HeroImage';
 import { some, none } from 'fp-ts/lib/Option';
-import { AppSections } from '../../types';
+import { AppSections } from '../types';
 
 const Hero = () => {
     const handleScroll = () => {

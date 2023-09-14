@@ -1,6 +1,6 @@
 import SearchBar from '@/components/search/Searchbar'
 // import Hero from '../components/hero/Hero'
-import Hero from '@/components/hero/Hero'
+import Hero from '@/components/Hero'
 import { AppSections } from '@/types'
 import CustomFilter from '../components/custom/CustomFilter'
 // import { CustomFilter } from '@/components'
