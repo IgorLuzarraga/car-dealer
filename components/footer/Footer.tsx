@@ -1,7 +1,7 @@
 import FooterLinks from "./FooterLinks";
 import FooterCopyrightLinks from "./FooterCopyrightLinks";
 import FooterCopyright from "./FooterCopyright";
-import CarLogo from "./CarLogo";
+import CarLogo from "../CarLogo";
 import FooterCopyrightCol from "./FooterCopyrightCol";
 
 const Footer = () => (
