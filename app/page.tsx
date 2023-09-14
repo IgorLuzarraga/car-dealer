@@ -8,6 +8,8 @@ import { fetchCars } from '@/services'
 import CarCard from '@/components/car/carCard/CarCard'
 import ShowMore from '@/components/ShowMore'
 import { CarsType } from '@/types'
+import ErrorFetchingData from '@/components/home/ErrorFetchingData'
+import Headings from '@/components/home/Headings'
 
 export default async function Home({ searchParams }: HomeProps) {
 
@@ -26,10 +28,8 @@ export default async function Home({ searchParams }: HomeProps) {
       <Hero />
 
       <div className='mt-12 padding-x padding-y max-width' id={AppSections.CarCatalogue}>
-        <div className='flex flex-col items-start justify-start gap-y-2.5 text-black-100'>
-          <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
-          <p>Explore out cars you might like</p>
-        </div>
+
+        <Headings />
 
         <div className='mt-12 w-full flex-between flex-wrap gap-5'>
           <SearchBar />
@@ -40,23 +40,22 @@ export default async function Home({ searchParams }: HomeProps) {
           </div>
         </div>
 
-        {!isDataEmpty ? (
-          <section>
-            <div className='grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14'>
-              {showCars(allCars)}
-            </div>
+        {!isDataEmpty
+          ? (
+            <section>
+              <div className=' w-full pt-14 grid grid-cols-1 
+              md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 '
+              >
+                {showCars(allCars)}
+              </div>
 
-            <ShowMore
-              pageNumber={(searchParams.limit || 10) / 10}
-              isNext={(searchParams.limit || 10) > allCars.length}
-            />
-          </section>
-        ) : (
-          <div className='mt-16 flex justify-center items-center flex-col gap-2'>
-            <h2 className='text-black text-xl font-bold'>Oops, no results</h2>
-            <p>{allCars?.message}</p>
-          </div>
-        )}
+              <ShowMore
+                pageNumber={(searchParams.limit || 10) / 10}
+                isNext={(searchParams.limit || 10) > allCars.length}
+              />
+            </section>
+          ) : <ErrorFetchingData message={allCars?.message} />
+        }
 
       </div>
 
